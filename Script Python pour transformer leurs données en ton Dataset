@@ -1,0 +1,22 @@
+//Script Python pour transformer leurs données en ton Dataset
+import json
+
+# Imaginons que tu as récupéré un fichier 'stm32f405.json' depuis leur dépôt
+fichier_source = 'stm32f405.json'
+fichier_dataset = 'mon_dataset_stm32.jsonl'
+
+with open(fichier_source, 'r', encoding='utf-8') as f:
+    data_brute = json.load(f)
+
+# On crée une entrée pour ton IA
+instruction = f"Donne-moi les informations techniques pour le microcontrôleur {data_brute['name']}"
+reponse = f"Ce chip appartient à la famille {data_brute['family']}. Ses périphériques incluent : {list(data_brute['peripherals'].keys())}"
+
+dataset_entry = {
+    "instruction": instruction,
+    "output": reponse
+}
+
+# Sauvegarde en .jsonl
+with open(fichier_dataset, 'a', encoding='utf-8') as f:
+    f.write(json.dumps(dataset_entry, ensure_ascii=False) + '\n')
