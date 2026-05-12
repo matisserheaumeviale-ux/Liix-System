@@ -1,0 +1,29 @@
+{
+  "accepted_entries": 216,
+  "rejected_entries": 589,
+  "average_quality_score": 40.19,
+  "by_category": {
+    "GENERAL_STM32": 104,
+    "TIMER": 38,
+    "UART": 24,
+    "AFLC": 11,
+    "ADC": 14,
+    "GPIO": 21,
+    "PWM": 3,
+    "HEADER": 1
+  },
+  "by_kind": {
+    "TECH_NOTE": 114,
+    "C_SOURCE": 97,
+    "YAML": 3,
+    "C_HEADER": 2
+  },
+  "output_files": {
+    "final": "output/dataset_stm32_matisse.jsonl",
+    "train": "output/train.jsonl",
+    "valid": "output/valid.jsonl",
+    "test": "output/test.jsonl",
+    "rejected": "output/rejected.jsonl",
+    "report": "output/report.json"
+  }
+}
