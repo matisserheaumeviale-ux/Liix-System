@@ -1,0 +1,189 @@
+{
+  "auto_ingest": true,
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "output_model": "liix-code-0.2",
+  "files_scanned": 810,
+  "files_ignored": 2,
+  "files_rejected": 296,
+  "rejected_rows": 732,
+  "rejection_reasons": [
+    [
+      "chunk_too_short",
+      558
+    ],
+    [
+      "no_useful_stm32_signal",
+      172
+    ],
+    [
+      "unsupported_extension",
+      2
+    ]
+  ],
+  "categories": {
+    "AGENTIC_DOC": 5,
+    "AGENTIC_TOOL_USE": 150,
+    "CONTINUE_PROMPT": 2,
+    "OPENOCD": 26,
+    "STM32_CODE": 2656,
+    "TECH_NOTE": 273,
+    "GCC_ERROR_LOG": 198
+  },
+  "extraction_methods": {
+    "file_part": 637,
+    "agentic_tool_use": 150,
+    "function": 2506,
+    "split_function": 17
+  },
+  "big_file_entries": 513,
+  "agentic_entries_before_limit": 473,
+  "agentic_entries_after_limit": 150,
+  "max_agentic_entries": 150,
+  "weak_generic_answers": 0,
+  "spl_detected": 36,
+  "cmsis_detected": 966,
+  "register_data_entries": 69,
+  "top_rejected_generic_examples": [],
+  "estimated_tokens": 817762,
+  "average_quality_score": 44.15,
+  "top_most_useful_files": [
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\USART\\USART_Communication_Rx_IT\\Inc\\main.h",
+      "score": 83,
+      "entries": 1
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\USART\\USART_Communication_Rx_IT_Continuous\\Inc\\main.h",
+      "score": 83,
+      "entries": 1
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\USART\\USART_Communication_Rx_IT_Init\\Inc\\main.h",
+      "score": 83,
+      "entries": 1
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\USART\\USART_Communication_Tx\\Inc\\main.h",
+      "score": 83,
+      "entries": 1
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\USART\\USART_Communication_Tx_IT\\Inc\\main.h",
+      "score": 83,
+      "entries": 1
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples\\I2C\\I2C_TwoBoards_AdvComIT\\Src\\stm32f1xx_hal_msp.c",
+      "score": 77,
+      "entries": 3
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples\\I2C\\I2C_TwoBoards_ComIT\\Src\\stm32f1xx_hal_msp.c",
+      "score": 77,
+      "entries": 3
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples\\I2C\\I2C_TwoBoards_ComPolling\\Src\\stm32f1xx_hal_msp.c",
+      "score": 77,
+      "entries": 3
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples\\I2C\\I2C_TwoBoards_RestartAdvComIT\\Src\\stm32f1xx_hal_msp.c",
+      "score": 77,
+      "entries": 3
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples\\I2C\\I2C_TwoBoards_RestartComIT\\Src\\stm32f1xx_hal_msp.c",
+      "score": 77,
+      "entries": 3
+    }
+  ],
+  "top_noisiest_files": [
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Templates\\Src\\stm32f1xx_hal_msp.c",
+      "rejected_chunks": 2,
+      "accepted_chunks": 0,
+      "noise_ratio": 1.0
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\USART\\USART_Communication_Rx_IT_Init\\Inc\\stm32f1xx_it.h",
+      "rejected_chunks": 1,
+      "accepted_chunks": 0,
+      "noise_ratio": 1.0
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\I2C\\I2C_OneBoard_AdvCommunication_DMAAndIT\\Inc\\stm32_assert.h",
+      "rejected_chunks": 1,
+      "accepted_chunks": 0,
+      "noise_ratio": 1.0
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\EXTI\\EXTI_ToggleLedOnIT\\Inc\\stm32f1xx_it.h",
+      "rejected_chunks": 1,
+      "accepted_chunks": 0,
+      "noise_ratio": 1.0
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\ADC\\ADC_MultimodeDualInterleaved\\Inc\\stm32_assert.h",
+      "rejected_chunks": 1,
+      "accepted_chunks": 0,
+      "noise_ratio": 1.0
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\PWR\\PWR_EnterStandbyMode\\Inc\\stm32_assert.h",
+      "rejected_chunks": 1,
+      "accepted_chunks": 0,
+      "noise_ratio": 1.0
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\RCC\\RCC_UseHSI_PLLasSystemClock\\Inc\\stm32f1xx_it.h",
+      "rejected_chunks": 1,
+      "accepted_chunks": 0,
+      "noise_ratio": 1.0
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\RTC\\RTC_Tamper\\Inc\\stm32f1xx_it.h",
+      "rejected_chunks": 1,
+      "accepted_chunks": 0,
+      "noise_ratio": 1.0
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples_LL\\ADC\\ADC_AnalogWatchdog\\Inc\\stm32f1xx_it.h",
+      "rejected_chunks": 1,
+      "accepted_chunks": 0,
+      "noise_ratio": 1.0
+    },
+    {
+      "path": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\sources\\stm32\\stm32cube_f1_optimized\\Projects\\STM32F103RB-Nucleo\\Examples\\I2C\\I2C_TwoBoards_RestartAdvComIT\\Inc\\stm32f1xx_it.h",
+      "rejected_chunks": 1,
+      "accepted_chunks": 0,
+      "noise_ratio": 1.0
+    }
+  ],
+  "split_leaks": 0,
+  "datasets": {
+    "dataset_stm32_matisse": 2929,
+    "dataset_debug": 224,
+    "dataset_agentic": 150,
+    "dataset_continue_quality": 13,
+    "dataset_agentic_quality": 13,
+    "dataset_ioc": 0,
+    "train": 2890,
+    "valid": 292,
+    "test": 128,
+    "rejected": 732
+  },
+  "outputs": {
+    "dataset_stm32_matisse": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\output\\dataset_stm32_matisse.jsonl",
+    "dataset_debug": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\output\\dataset_debug.jsonl",
+    "dataset_agentic": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\output\\dataset_agentic.jsonl",
+    "dataset_continue_quality": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\output\\dataset_continue_quality.jsonl",
+    "dataset_agentic_quality": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\output\\dataset_agentic_quality.jsonl",
+    "dataset_ioc": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\output\\dataset_ioc.jsonl",
+    "train": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\output\\train.jsonl",
+    "valid": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\output\\valid.jsonl",
+    "test": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\output\\test.jsonl",
+    "rejected": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\output\\rejected.jsonl",
+    "report": "C:\\Users\\steph\\OneDrive - Cégep Limoilou\\Liix-System\\output\\report.json"
+  }
+}

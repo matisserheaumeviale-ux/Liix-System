@@ -1,0 +1,16 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+models/
+*.safetensors
+*.gguf
+*.bin
+*.pt
+*.pth
+
+output/train_log.txt
+output/train_error_log.txt
+
+.DS_Store
